@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.LoginTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-12-20T18:40:47" hostname="09e161418538" time="0.175">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.LoginTestCase" time="0.086"/>
+  <testcase name="test2Update" classname="com.app.server.service.LoginTestCase" time="0.018"/>
+  <testcase name="test3FindById" classname="com.app.server.service.LoginTestCase" time="0.008"/>
+  <testcase name="test4Delete" classname="com.app.server.service.LoginTestCase" time="0.049"/>
+  <testcase name="testNQFindMappedUser" classname="com.app.server.service.LoginTestCase" time="0.009"/>
+  <testcase name="testNQFindUnMappedUser" classname="com.app.server.service.LoginTestCase" time="0.005"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:47.992--ClientSession(1587809821)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [40CB2983-D0CB-4342-9BCE-83CE32AC188C, 3OdKafzPsFo8Sfb3WcJLyEsEPU0jjx6UsKoNoSXQTPizJrobOe, 1, AAAAA, 2015-12-21 00:10:47.989, null, 2015-12-21 00:10:47.989, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:47.999--ClientSession(1196952695)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [135EBA73-38D6-401C-8461-940C441AE3EB, qT, lf5, 0fDk, 4, cXwFetUcHNAbFjxAFtrVYAb7CCmZkwqot76WsbBQGeDYc92nNu, ADqMMzDg0AzQOODzQykCBsZvU8KGZ8GwOZnUrbW7JrUJcXJJA2, H7FqUEGa1D5BQQiYZFL7Gq3PaKfEjvdVkcuLJvraO8cZKAZcRA, wEmpkts6FdjThAwUnzgZlWzG0JhoF2Ud, 1, AAAAA, 2015-12-21 00:10:47.996, null, 2015-12-21 00:10:47.996, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.005--ClientSession(1438699524)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F3A3EB59-B476-4019-8308-074394A92193, YLAQ216NBYJXvN3sr7d1cGHr2ir7mA2uwyA2hxHukxMnhh7Lpg, 1, AAAAA, 2015-12-21 00:10:48.002, null, 2015-12-21 00:10:48.002, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.01--ClientSession(1572054147)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A246A5CA-02E3-4EBF-A924-4696C074A792, swR3Xfra7Mu9tG5lu7GxOEaRiXngy1SZ194m5STpJF9C6dGmAB, WzmSRldGOpfm8C8bPzJnoLbQY4jZZlOa36NXlN6aLyghvyyriq, L7O4O0mOxUFH9Yf0fzRL5rRafJtVRVNFXd6Tk7s5zcTwPSCe9M, efT6XQvXmzZDgjvVJVVMYRt4sFpX13SArHCH9zrOROgGZy6wGY, 1125, 1, AAAAA, 2015-12-21 00:10:48.008, null, 2015-12-21 00:10:48.008, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.016--ClientSession(1798820724)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D10E01AE-530A-469F-AC6D-1D50C02864CC, tOPZITd6pyHPIvo2Kqicz6WNBOOjLhVxg4HSZc9WB1C7up9qQS, 8HHqpkD5u1YcGIYC1eSljU8Ik8Nd9P61iLQFZNIJfq5cqWNovN, BtbiBDPTNQoav1S9nJz6ZaCXRccfLmkARpi8UdMrmKFxR1l7Vn, OnCLf5zq7QMLWDP1cLvTngl4a0MbR4gYTVLvdLYJCG8ahDjGHr, 76388, 1, AAAAA, 2015-12-21 00:10:48.013, null, 2015-12-21 00:10:48.013, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.054--ClientSession(1429338095)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA, SCxeleE4M6CdSC44czVHTt3Lx7DQp1QRE3WCc83L5pTNLnkOE3, 35LZ5d5tg1pkctsJOcW41a0gV2TKbcnGde2dXYLBylXCiqKWZe, 4fNs4xF5zAAwwkpamAnjdu3rKm3BUIj4oOFxiSJgHIjsom346u, 56XtSr2lSQQdwr4IqxRVG7JrMFUcbCbWk7aEloUdqkgILWt8ws, 6, 1, null, 2015-12-21 00:10:48.002, null, 2015-12-21 00:10:48.002, null, null]
+[EL Fine]: sql: 2015-12-20 18:40:48.056--ClientSession(1429338095)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CoreContacts_T (contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1, 90, 1970-01-02, 1970-01-02, ZqwQD1RajjEKCpXLMC0OxKrKixdn5d1sMPoif5UJ7kXEZMGEBZ, CqqIcGbqI9WEGaDjIn3e38tGSSoobzu4m6NLRnR7yU4BwS3Dw6, 40CB2983-D0CB-4342-9BCE-83CE32AC188C, QHGnmIfZS6a9nOM9mF0gTw77XHoD4DpOvf7ktmaRwXhi5jrVWG, EQFC4Vzz8cNVpi036V8JyCg2k3kUxUiqyM4vFZXjKAWeQELmvG, ZvU03pKaN24w8zgsvts45Er3yzTKwwLYjPaZWTlgXy1KpTok6y, 135EBA73-38D6-401C-8461-940C441AE3EB, tEwEYvNLM54BbMhAXOO1W8MkS5n5Xfyndbm2goVUhWmqiQz4NQ, c7AnyXCqjHpUIXP9JHsH0sBaUAy9JpspmzJRGvmp38JopO9LY9, WNed7Txkm1WGx2RjlnbwdwJVV09HnVhhcfW0h8C0fb60fLNc4Y, hf2UaOzB4OaCiZ5pAQ0R, F3A3EB59-B476-4019-8308-074394A92193, 1, null, 2015-12-21 00:10:47.989, null, 2015-12-21 00:10:47.989, null, null, 9FD4AD24-00AA-4564-BBF4-E50AF198A7DA]
+[EL Fine]: sql: 2015-12-20 18:40:48.057--ClientSession(1429338095)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_User_T (userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885, 1, 1, 0, 1, 1, 1970-01-02 15:47:36.789, 0, xOesLnE6hnGvhtX2U9jdWjd4XmhQbOA3DgbQR93W9FotAA4CoR, 1970-01-02 15:47:36.789, 987, 6, A246A5CA-02E3-4EBF-A924-4696C074A792, D10E01AE-530A-469F-AC6D-1D50C02864CC, 1, null, 2015-12-21 00:10:48.008, null, 2015-12-21 00:10:48.008, null, null]
+[EL Fine]: sql: 2015-12-20 18:40:48.058--ClientSession(1429338095)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Login_T (loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [C2869D8A-F81D-4C57-98C9-852576E5BF55, 3, ttaJV5b96aPcLIpeIFIa3UMZMgeFWTxR7FDrvpBZrRAlyEFuF1, BCFOvwQvIUhOSdmm0jyZ4Q49p7m0kqWs, JeB2Ay8Y7z7UEFdw, 1, AAAAA, 2015-12-21 00:10:48.019, null, 2015-12-21 00:10:48.019, 1, null, 79C84C67-BC0E-43CA-A733-4AD90631F7E1, 3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.065--ClientSession(334352010)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE ((activeStatus = ?) AND (loginPk = ?))
+	bind => [1, C2869D8A-F81D-4C57-98C9-852576E5BF55]
+[EL Fine]: sql: 2015-12-20 18:40:48.066--ClientSession(334352010)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.068--ClientSession(334352010)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA]
+[EL Fine]: sql: 2015-12-20 18:40:48.068--ClientSession(334352010)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.069--ClientSession(334352010)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.072--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE (loginPk = ?)
+	bind => [C2869D8A-F81D-4C57-98C9-852576E5BF55]
+[EL Fine]: sql: 2015-12-20 18:40:48.072--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.073--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA]
+[EL Fine]: sql: 2015-12-20 18:40:48.074--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.075--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.077--ClientSession(1174065751)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--UPDATE ast_Login_T SET loginId = ?, serverAuthImage = ?, serverAuthText = ?, updatedBy = ?, versionId = ? WHERE ((loginPk = ?) AND (versionId = ?))
+	bind => [TgVvhqs5BPKwA6Pk5hoEoUZlHwDfmNKEWEuOabXEfaqYSqzqMz, 9tj4mxez4haTbAaF11Kw29AMRCt9dTJl, LcwJ257qYqKCS9iP, AAAAA, 2, C2869D8A-F81D-4C57-98C9-852576E5BF55, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.083--ClientSession(1338322400)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE ((activeStatus = ?) AND (loginPk = ?))
+	bind => [1, C2869D8A-F81D-4C57-98C9-852576E5BF55]
+[EL Fine]: sql: 2015-12-20 18:40:48.084--ClientSession(1338322400)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.085--ClientSession(1338322400)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA]
+[EL Fine]: sql: 2015-12-20 18:40:48.086--ClientSession(1338322400)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.087--ClientSession(1338322400)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.091--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT loginPk, failedLoginAttempts, loginId, serverAuthImage, serverAuthText, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, contactId, userId FROM ast_Login_T WHERE (loginPk = ?)
+	bind => [C2869D8A-F81D-4C57-98C9-852576E5BF55]
+[EL Fine]: sql: 2015-12-20 18:40:48.092--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.093--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA]
+[EL Fine]: sql: 2015-12-20 18:40:48.094--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.095--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.096--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.096--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.097--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885]
+[EL Fine]: sql: 2015-12-20 18:40:48.098--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressMap_B WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.099--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationMap_B WHERE (contactId = ?)
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.1--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Login_T WHERE ((loginPk = ?) AND (versionId = ?))
+	bind => [C2869D8A-F81D-4C57-98C9-852576E5BF55, 2]
+[EL Fine]: sql: 2015-12-20 18:40:48.101--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_User_T WHERE ((userId = ?) AND (versionId = ?))
+	bind => [3F23482A-B1A7-4E64-ABC4-8856A8B74885, 1]
+[EL Fine]: sql: 2015-12-20 18:40:48.101--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CoreContacts_T WHERE ((contactId = ?) AND (versionId = ?))
+	bind => [79C84C67-BC0E-43CA-A733-4AD90631F7E1, 1]
+[EL Fine]: sql: 2015-12-20 18:40:48.102--ClientSession(1415754121)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Timezone_M WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [9FD4AD24-00AA-4564-BBF4-E50AF198A7DA, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.109--ClientSession(326187514)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [D10E01AE-530A-469F-AC6D-1D50C02864CC]
+[EL Fine]: sql: 2015-12-20 18:40:48.11--ClientSession(326187514)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [D10E01AE-530A-469F-AC6D-1D50C02864CC, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.115--ClientSession(291510465)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [A246A5CA-02E3-4EBF-A924-4696C074A792]
+[EL Fine]: sql: 2015-12-20 18:40:48.116--ClientSession(291510465)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [A246A5CA-02E3-4EBF-A924-4696C074A792, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.121--ClientSession(322428449)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [F3A3EB59-B476-4019-8308-074394A92193]
+[EL Fine]: sql: 2015-12-20 18:40:48.122--ClientSession(322428449)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Title_M WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [F3A3EB59-B476-4019-8308-074394A92193, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.127--ClientSession(2095999801)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [135EBA73-38D6-401C-8461-940C441AE3EB]
+[EL Fine]: sql: 2015-12-20 18:40:48.128--ClientSession(2095999801)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [135EBA73-38D6-401C-8461-940C441AE3EB, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.133--ClientSession(1687297650)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [40CB2983-D0CB-4342-9BCE-83CE32AC188C]
+[EL Fine]: sql: 2015-12-20 18:40:48.134--ClientSession(1687297650)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [40CB2983-D0CB-4342-9BCE-83CE32AC188C, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.141--ClientSession(447721176)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId))
+	bind => [1]
+[EL Fine]: sql: 2015-12-20 18:40:48.141--ClientSession(447721176)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind => [A06E9BF3-74EB-4D67-9CB1-998AE709C645]
+[EL Fine]: sql: 2015-12-20 18:40:48.142--ClientSession(447721176)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [B87E5A41-C0D2-4114-9FDD-9B5BD10FC9C4]
+[EL Fine]: sql: 2015-12-20 18:40:48.143--ClientSession(447721176)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [18D01ABF-F632-496A-B379-FC50EDEAB8C0]
+[EL Fine]: sql: 2015-12-20 18:40:48.144--ClientSession(447721176)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [18D01ABF-F632-496A-B379-FC50EDEAB8C0]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.15--ClientSession(1784739533)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId NOT IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId))
+	bind => [1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

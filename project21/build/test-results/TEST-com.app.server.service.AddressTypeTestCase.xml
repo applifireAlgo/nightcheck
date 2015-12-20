@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.AddressTypeTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-12-20T18:40:46" hostname="09e161418538" time="0.081">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.AddressTypeTestCase" time="0.054"/>
+  <testcase name="test2Update" classname="com.app.server.service.AddressTypeTestCase" time="0.012"/>
+  <testcase name="test3FindById" classname="com.app.server.service.AddressTypeTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.AddressTypeTestCase" time="0.01"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:46.525--ClientSession(1933915025)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [22E4E116-7CEE-4C2F-A0BA-E5353827D9E0, BAtROkUXtU19belmI3BH2tNRXn7k9pWzQUKqUvfXuNIfYrzHPX, 8bCpxCj7oCHhrkhaprLidE16RK3AP8LE7xiC8egdnQwhUsckHO, e7KrgMwl176KEbgJXzTW5Nu48EPHonMnntlIBJx974nKh3bNy0, 1, AAAAA, 2015-12-21 00:10:46.485, null, 2015-12-21 00:10:46.485, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:46.534--ClientSession(2102356086)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind => [1, 22E4E116-7CEE-4C2F-A0BA-E5353827D9E0]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:46.537--ClientSession(1725220611)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [22E4E116-7CEE-4C2F-A0BA-E5353827D9E0]
+[EL Fine]: sql: 2015-12-20 18:40:46.538--ClientSession(1725220611)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--UPDATE ast_AddressType_M SET addressType = ?, addressTypeDesc = ?, addressTypeIcon = ?, updatedBy = ?, versionId = ? WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [p3TDVU0ZNClkQALyFdERXYoHEcsuInNvgcSP1AU8dxKr2z9FHr, ppYisEkwF4IvjfXZz7UUY7TtmKmh6lJpZGEz8mk1mO5fh7Nf6d, 9KcQSK88wVNoMOGiUXDuyqZq7Eu5SmOmYeYzOhdsNN2BRvwXWs, AAAAA, 2, 22E4E116-7CEE-4C2F-A0BA-E5353827D9E0, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:46.545--ClientSession(563333039)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind => [1, 22E4E116-7CEE-4C2F-A0BA-E5353827D9E0]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:46.55--ClientSession(1565871437)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [22E4E116-7CEE-4C2F-A0BA-E5353827D9E0]
+[EL Fine]: sql: 2015-12-20 18:40:46.551--ClientSession(1565871437)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [22E4E116-7CEE-4C2F-A0BA-E5353827D9E0, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.CommunicationTypeTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-12-20T18:40:48" hostname="09e161418538" time="0.15">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.CommunicationTypeTestCase" time="0.117"/>
+  <testcase name="test2Update" classname="com.app.server.service.CommunicationTypeTestCase" time="0.01"/>
+  <testcase name="test3FindById" classname="com.app.server.service.CommunicationTypeTestCase" time="0.005"/>
+  <testcase name="test3findBycommGroupId" classname="com.app.server.service.CommunicationTypeTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="com.app.server.service.CommunicationTypeTestCase" time="0.014"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.319--ClientSession(230774589)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationGroup_M (commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7D6D5D99-A42C-4DB6-80FD-F5400D0DB02A, eB9I3GdbFHWIn6j0tin304S3Bzt9NsSu0spcVCbsA8Aa8xTNt8, ALzaFBXiibJ4IQEavzRcoYkjSQYgrOdxCjD4UzrFD0G4zEFUA0, 1, AAAAA, 2015-12-21 00:10:48.296, null, 2015-12-21 00:10:48.296, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.398--ClientSession(740923981)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationType_M (commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [C1F49556-15D3-4608-9D37-0AB1A05D83E1, 7D6D5D99-A42C-4DB6-80FD-F5400D0DB02A, EZg7je9c537W7PrGFmrJzbOGCxsmqkmLaGOgQZpuNpH2emp6DX, BNcDC1OYefANbg9760EO6w9rsAv6GbqgZJ1SuYCBHwYXczerv4, 1, AAAAA, 2015-12-21 00:10:48.371, null, 2015-12-21 00:10:48.371, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.406--ClientSession(1662243959)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE ((activeStatus = ?) AND (commType = ?))
+	bind => [1, C1F49556-15D3-4608-9D37-0AB1A05D83E1]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.408--ClientSession(1913461020)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE (commType = ?)
+	bind => [C1F49556-15D3-4608-9D37-0AB1A05D83E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.409--ClientSession(1913461020)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--UPDATE ast_CommunicationType_M SET commTypeDescription = ?, commTypeName = ?, updatedBy = ?, versionId = ? WHERE ((commType = ?) AND (versionId = ?))
+	bind => [MRnhrSqdte2YS8LdDFad63oJDlEVlYGdmdMeuscmKc8L74oXTo, 8Cbfur8id2XwlZNHJEWm9wBaK8JOlZMgb652hlw034SZp4Anmj, AAAAA, 2, C1F49556-15D3-4608-9D37-0AB1A05D83E1, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.415--ClientSession(381017206)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE ((activeStatus = ?) AND (commType = ?))
+	bind => [1, C1F49556-15D3-4608-9D37-0AB1A05D83E1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.42--ClientSession(1848057656)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE ((activeStatus = ?) AND (commGroupId = ?))
+	bind => [1, 7D6D5D99-A42C-4DB6-80FD-F5400D0DB02A]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.424--ClientSession(1618444509)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE (commType = ?)
+	bind => [C1F49556-15D3-4608-9D37-0AB1A05D83E1]
+[EL Fine]: sql: 2015-12-20 18:40:48.425--ClientSession(1618444509)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationType_M WHERE ((commType = ?) AND (versionId = ?))
+	bind => [C1F49556-15D3-4608-9D37-0AB1A05D83E1, 2]
+In around repository aspect
+[EL Fine]: sql: 2015-12-20 18:40:48.431--ClientSession(435275772)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE (commGroupId = ?)
+	bind => [7D6D5D99-A42C-4DB6-80FD-F5400D0DB02A]
+[EL Fine]: sql: 2015-12-20 18:40:48.432--ClientSession(435275772)--Connection(1552301182)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationGroup_M WHERE ((commGroupId = ?) AND (versionId = ?))
+	bind => [7D6D5D99-A42C-4DB6-80FD-F5400D0DB02A, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
