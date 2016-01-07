@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON demop.* TO 'demop'@'%' IDENTIFIED BY 'demop' WITH GRANT OPTION
